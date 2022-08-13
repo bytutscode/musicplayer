@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dark"></div>
+        <div class="list">
+            <div class="list-header">Biblioteca</div>
+            <div class="models">
+               <div class="music">
+                <div class="music-icon">
+                    <img src="" alt="">
+                </div>
+                <div class="music-name"></div>
+            </div> 
+            </div>
+            
+        </div>
+        <header>Music name</header>
+        <section>
+            <div class="music-disc">
+                <div class="musics-button"></div>
+                <div class="disc">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="music-dur-container">
+                <div class="music-dur">
+                    <input id="range-music" min="0" max="10" type="range" name="music-bar">
+                </div>
+            </div>
+            <div class="controls">
+                <button onclick="prev()"></button>
+                <button onclick="pause()"></button>
+                <button onclick="next()"></button>
+            </div>
+            <div class="volume">
+                <div class="vol-icon">
+                    <img src="midia/sound_PNG32.png" alt="">
+                </div>
+                <input id="range-volume" step="0" value="10" min="0" max="10" type="range" name="volume-bar">
+            </div>
+        </section>
+    </div>
+    
+
+    <audio src=""></audio>
+<script src="assets/js/songsjs.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
