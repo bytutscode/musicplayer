@@ -17,6 +17,11 @@
 
 body {
     background-color: black;
+    background-image: url(../../midia/background.jpg);
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -125,7 +130,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 1px 1px 2px black;
     background-color: var(--header);
 }
@@ -156,7 +161,6 @@ header {
     justify-content: center;
     align-items: center;
     color: black;
-    background-color: rgb(118, 209, 13);
     border-radius: 50%;
 }
 
@@ -183,27 +187,6 @@ header {
     display: flex;
     align-items: center;
 }
-.music-bar {
-    width: 0%;
-    position: absolute;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 5px;
-    z-index: 2;
-    border-radius: 30px;
-    background-color: rgb(102, 255, 0);
-}
-.dot {
-    width: 14px;
-    position: absolute;
-    z-index: 3;
-    height: 14px;
-    border-radius: 50%;
-    background-color:rgb(102, 255, 0) ;
-}
-
-
 
 .controls {
     display: flex;
@@ -306,4 +289,40 @@ header {
     height: 13px;
     background-color: var(--header);
     border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.24);
+    color: #aaa;
+    
+}
+footer h3 {
+    font-size: 15px;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    transition: all .5s ease-in-out;
+}
+footer a:hover {
+    color: rgb(0, 204, 255);
+}
+
+
+@media (max-width:350px){
+    footer h3 {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 275px;
+    }
 }
