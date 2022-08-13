@@ -317,6 +317,23 @@ footer a:hover {
 }
 
 
+@media (max-width:750){
+    .controls button:hover {
+        opacity: 1;
+    }
+    .musics-button:hover {
+        opacity: 1;
+    }
+    .controls button:active {
+        opacity: 0.8;
+    }
+    .musics-button:active {
+        opacity: 0.8;
+    }
+    
+}
+
+
 @media (max-width:350px){
     footer h3 {
         font-size: 12px;
