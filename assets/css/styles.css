@@ -330,6 +330,9 @@ footer a:hover {
     .musics-button:active {
         opacity: 0.8;
     }
+    footer h3 {
+        font-size: 13px;
+    }
     
 }
 
